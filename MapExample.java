@@ -16,7 +16,7 @@ public class MapExample {
         Set<Map.Entry<String, Integer>> set = people.entrySet(); // Map을 하나의 집합(set)으로 바꿔줌 => ("김길동", 85), ("홍길동", 95), ("최길동", 80)
         Iterator<Map.Entry<String, Integer>> it = set.iterator(); // 반복자 : 포인터 같은 개념(첫 번째 주소 저장)
 
-        while (it.hasNext()) { // 다음 데이터로 이동, 더 이상 없으면 빠져나옴
+        while (it.hasNext()) { // 가져올 다음 객체가 있으면 true 없으면 false 반환
             Map.Entry<String, Integer> e = it.next(); // 해당 데이터 가져옴
             System.out.println("\t" + e.getKey() + " : " + e.getValue());
         }
